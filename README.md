@@ -1,7 +1,7 @@
-# Real-Time Sensor Anomaly Detection
+# Real-Time Sensor Anomaly Detection on Raspberrypi OS
 
 ## Overview
-This project demonstrates a real-time anomaly detection system using sensor data and vector similarity.
+This project demonstrates a real-time anomaly detection system using sensor data and vector similarity on raspberrypi.
 
 It simulates sensor readings (temperature, humidity, vibration), stores normal patterns in a vector database, and detects anomalies based on similarity scores.
 
@@ -24,7 +24,7 @@ It simulates sensor readings (temperature, humidity, vibration), stores normal p
 
 ---
 
-## How It Works
+## How It Works(on Raspberrypi OS)
 1. Normal sensor data is stored as vectors in Qdrant
 2. Incoming real-time data is generated using a smooth pattern (sine-based)
 3. Each new data point is compared with stored vectors
@@ -35,13 +35,13 @@ It simulates sensor readings (temperature, humidity, vibration), stores normal p
 
 ## Installation
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 ---
 
 ## Run the Project
 
-streamlit run realtime_anomaly.py
+python3 -m streamlit run realtime_anomaly.py
 
 ---
 
