@@ -69,86 +69,12 @@ This project demonstrates a real-time anomaly detection system using sensor data
 
 It simulates sensor readings (temperature, humidity, vibration), stores normal patterns in a vector database, and detects anomalies based on similarity scores.
 
----
 
-## Features
-- Real-time sensor data simulation
-- Vector-based anomaly detection using Qdrant
-- Similarity score visualization
-- Anomaly detection when similarity < 0.8
-- Interactive dashboard using Streamlit
-
----
-
-## Tech Stack
-- Python
-- Streamlit
-- Qdrant Vector Database
-- Plotly
-
----
-
-## How It Works(on Raspberrypi OS)
-1. Normal sensor data is stored as vectors in Qdrant
-2. Incoming real-time data is generated using a smooth pattern (sine-based)
-3. Each new data point is compared with stored vectors
-4. A similarity score is calculated
-5. If similarity < 0.8 → Anomaly is detected
-
----
-
-## Installation
-
-pip3 install -r requirements.txt
-
----
-
-## Run the Project
-
-python3 -m streamlit run realtime_anomaly.py
->>>>>>> 428ac8b3ef73c5e7f492acda721260f5aa234fee
-
----
-
-## Output
-<<<<<<< HEAD
-
-- Live updating graph  
-- Similarity score tracking  
-- Red markers indicating anomalies  
-
----
-
-## Important Notes
-
-
-- If storage error occurs:
-rm -rf qdrant_data
----
-
-## Future Improvements
-
-- Real sensor integration (Raspberry Pi)
-- Alert system (email/SMS) 
-- Cloud deployment 
-- Advanced ML models
-
----
 =======
 - Live similarity score graph
 - Red markers indicate anomalies
-- Threshold line at 0.8
 
 ---
 
-## Project Structure
-
-sensor_anomaly_project/
-│
-├── realtime_anomaly.py
-├── requirements.txt
-├── README.md
-
----
 
 >>>>>>> 428ac8b3ef73c5e7f492acda721260f5aa234fee
