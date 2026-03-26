@@ -13,7 +13,7 @@ import config
 # PAGE CONFIG
 # =========================
 st.set_page_config(layout="wide")
-st.title("🚀 Real-Time Sensor Anomaly Detection")
+st.title(" Real-Time Sensor Anomaly Detection")
 
 engine = QdrantEdgeEngine(fresh=True)
 detector = AnomalyDetector(engine)
@@ -105,7 +105,7 @@ try:
             anomaly_y.append(result.similarity)
 
             alert_box.error(
-                f"🚨 Anomaly | Similarity={result.similarity:.3f}"
+                f" Anomaly | Similarity={result.similarity:.3f}"
             )
         else:
             alert_box.empty()
@@ -144,7 +144,7 @@ try:
 
         chart.plotly_chart(fig, width="stretch")
 
-        time.sleep(0.2)
+        time.sleep(1)
 
 except KeyboardInterrupt:
     engine.close()
